@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>jraloff_admin</sys_created_by>
         <sys_created_on>2017-06-21 20:17:34</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>227b91b4dbabb24086e17ee5bf9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_choice</sys_name>

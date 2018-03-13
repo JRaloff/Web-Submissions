@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>jraloff_admin</sys_created_by>
         <sys_created_on>2017-07-17 18:12:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fb08b605dbc88b4086e17ee5bf9619cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_mmsi_web_submiss_web_submission.*.x_mmsi_web_submiss_web_submission_admin</sys_name>
