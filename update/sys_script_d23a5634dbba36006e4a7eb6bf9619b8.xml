@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_mmsi_web_submiss_web_submission</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_mmsi_web_submiss_web_submission">web_service=commscopephonestore^EQ<item endquery="false" field="web_service" goto="false" newquery="false" operator="=" or="false" value="commscopephonestore"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Phone Store Record Insert</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	
+	//gs.debug('web service insert- source username ' +  current.user_name);
+	//var customer=  new GlideRecord("sys_user");
+	//customer.get("user_name", current.user_name);
+	var customer= new GlideRecord("sys_user");
+	customer.addQuery("user_name", current.user_name);
+	customer.query();
+	if (customer.next()) {
+		current.customer=customer.sys_id;
+	}
+	
+	//answering_service
+	
+	//gs.debug('web service insert- foundusername ' +  customer.user_name);
+	
+	// Add your code here
+	var gr = new GlideRecord("u_ad_hoc_request");
+	gr.description=current.description;
+	gr.short_description=current.short_description;
+	//gr.short_description = "Unicom ticket";
+	gr.contact_type="Answering Service";
+	gr.u_external_reference=current.external_reference;
+	gr.u_caller=current.customer;
+	gr.requested_for=current.customer;
+	gr.u_customer=current.customer;
+	gr.urgency=2;
+	gr.priority=2;
+	gr.contact_type='mobilestore';
+	gr.u_business_service='64db490d6f511100fdbb247cbb3ee4b7';
+	gr.u_category='hardware';
+	gr.u_subcategory='purchase';
+	gr.assignment_group='abf0cf456f925500888e181d5d3ee485';
+	current.task_table="u_ad_hoc_request";
+	current.task=gr.insert();
+	current.task_number=gr.number;
+
+	//gs.debug('web service insert- foundusername ' +  customer.user_name);
+	
+	//Add your code here
+	// 	var gr = new GlideRecord("new_call");
+	// 	gr.description=current.description;
+	// 	gr.short_description = "Unicom ticket";
+	// 	gr.contact_type="Answering Service";
+	// 	gr.caller=current.customer;
+	// 	//gr.requested_for=current.customer;
+	// 	//gr.u_cusomer=current.customer;
+	// 	//gr.urgency=2;
+	// 	//gr.priority=2;
+	// 	current.task_table="new_call";
+	// 	current.task=gr.insert();
+	// 	//gs.debug("web request: new Id: " +gr.sys_id);
+	// 	//current.task=gr.sys_id;
+	//current.task_number=gr.number;
+	
+	
+	
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2017-05-15 18:05:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d23a5634dbba36006e4a7eb6bf9619b8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Phone Store Record Insert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
+        <sys_update_name>sys_script_d23a5634dbba36006e4a7eb6bf9619b8</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2017-06-21 20:39:33</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

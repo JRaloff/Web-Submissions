@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="web_service" table="x_mmsi_web_submiss_web_submission_service" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>web_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unicom</label>
+            <language>en</language>
+            <name>x_mmsi_web_submiss_web_submission_service</name>
+            <sequence>0</sequence>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2017-06-11 23:07:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>95726e21db977e006e4a7eb6bf961956</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2017-06-11 23:07:26</sys_updated_on>
+            <value>unicom</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>web_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SalesForceCR</label>
+            <language>en</language>
+            <name>x_mmsi_web_submiss_web_submission_service</name>
+            <sequence>1</sequence>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2017-06-11 23:07:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>6582ee21db977e006e4a7eb6bf961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2017-06-11 23:07:44</sys_updated_on>
+            <value>salesforcecr</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>web_service</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CommScope Phone Store</label>
+            <language>en</language>
+            <name>x_mmsi_web_submiss_web_submission_service</name>
+            <sequence>2</sequence>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2017-06-11 23:07:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f282ee21db977e006e4a7eb6bf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2017-06-11 23:07:48</sys_updated_on>
+            <value>commscopephonestore</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>web_service</element>
+            <name>x_mmsi_web_submiss_web_submission_service</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2017-06-11 23:07:26</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>59726e21db977e006e4a7eb6bf961956</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>web_service</sys_name>
+            <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
+            <sys_update_name>sys_choice_x_mmsi_web_submiss_web_submission_service_web_service</sys_update_name>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2017-06-11 23:07:48</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

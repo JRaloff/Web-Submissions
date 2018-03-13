@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>true</global>
+        <group/>
+        <link_element/>
+        <name>ws:SalesForceCR</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>Web Submission SalesForce Change</short_description>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2017-06-21 20:55:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>feb36d38dbabb24086e17ee5bf961903</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ws:SalesForceCR</sys_name>
+        <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
+        <sys_update_name>sys_template_feb36d38dbabb24086e17ee5bf961903</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2017-08-17 13:35:41</sys_updated_on>
+        <table>change_request</table>
+        <template>company=0ecc2b2d6fb6de00b6c45afc5d3ee410^requested_by=8c347654dbe3b24086e17ee5bf96193a^u_source_of_change=Value Added^u_functional_business_area=221db0edc611228401760aec06c9d929^u_business_service=60db490d6f511100fdbb247cbb3ee4be^u_technical_service=cf231b126fe65900888e181d5d3ee459^urgency=4^assignment_group=f5e9df926fe65900888e181d5d3ee4f7^u_created_by_group=f5e9df926fe65900888e181d5d3ee4f7^u_it_owner=67e845b72b09d900fd4eab84b4da151b^EQ</template>
+        <user display_value="Jonathan Raloff (Admin)">4a91795d6f511100888e181d5d3ee460</user>
+        <view/>
+    </sys_template>
+</record_update>

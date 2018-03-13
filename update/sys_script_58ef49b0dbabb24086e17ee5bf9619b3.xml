@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_mmsi_web_submiss_web_submission_service</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Choice lists</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	if(current.operation() == 'insert') {
+		var inrec = new GlideRecord("sys_choice");
+		inrec.addQuery('element','web_service');
+		inrec.addQuery('name','x_mmsi_web_submiss_web_submission');
+		inrec.addQuery('language','en');
+		inrec.addQuery('value',current.web_service_key);
+		inrec.query();
+		if (inrec.next()) {
+			
+		}
+		else {
+			inrec.name = 'x_mmsi_web_submiss_web_submission';
+			inrec.element = 'web_service';
+			inrec.language = 'en';
+			inrec.inactive= false;
+			inrec.inactive= false;
+			inrec.domain='global';
+			inrec.value=current.web_service_key;
+			inrec.label=current.name;
+			inrec.insert();
+		}
+		
+	}
+	else if(current.name.changes()) {
+		var cnrec = new GlideRecord("sys_choice");
+		cnrec.addQuery('name','x_mmsi_web_submiss_web_submission');
+		cnrec.addQuery('element','web_service');
+		cnrec.addQuery('value',current.web_service_key);
+		cnrec.addQuery('language','en');
+		cnrec.query();
+		while (cnrec.next()) {
+			cnrec.label=current.name;
+			cnrec.value=current.web_service_key;
+			cnrec.update();
+		}
+		
+	}
+	else if(current.web_service_key.changes()) {
+		var ckrec = new GlideRecord("sys_choice");
+		ckrec.addQuery('name','x_mmsi_web_submiss_web_submission');
+		ckrec.addQuery('element','web_service');
+		ckrec.addQuery('value',previous.web_service_key);
+		ckrec.addQuery('language','en');
+		ckrec.query();
+		while (ckrec.next()) {
+			ckrec.label=current.name;
+			ckrec.value=current.web_service_key;
+			ckrec.update();
+		}
+		
+	}
+	else if (current.operation() == 'delete') {
+		var drec = new GlideRecord("sys_choice");
+		drec.addQuery('name','x_mmsi_web_submiss_web_submission');
+		drec.addQuery('element','web_service');
+		drec.addQuery('value',previous.web_service_key);
+		drec.addQuery('language','en');
+		drec.query();
+		while (drec.next()) {
+			drec.inactive= true;
+		}
+		
+	}
+		
+	else if (current.web_service_key.changes()) {
+		var arec = new GlideRecord("sys_choice");
+		arec.addQuery('name','x_mmsi_web_submiss_web_submission');
+		arec.addQuery('element','web_service');
+		arec.addQuery('value',current.web_service_key);
+		arec.addQuery('language','en');
+		arec.query();
+		while (arec.next()) {
+			arec.inactive= current.active;
+		}
+		
+	}
+	// Add your code here
+	
+	
+
+
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2017-06-21 20:13:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>58ef49b0dbabb24086e17ee5bf9619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Choice lists</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
+        <sys_update_name>sys_script_58ef49b0dbabb24086e17ee5bf9619b3</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2017-06-21 20:37:19</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>
