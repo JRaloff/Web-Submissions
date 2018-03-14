@@ -6,6 +6,13 @@
         <element attributes="edge_encryption_enabled=true" label="Service Description" max_length="1000" name="service_description" type="string"/>
         <element attributes="base_start=true" label="Target Table" max_length="80" name="target_table" type="table_name"/>
         <element attributes="edge_encryption_enabled=true" label="Target Template Name" max_length="40" name="target_template_name" type="string"/>
+        <element choice="1" label="Web Service" max_length="40" name="web_service" type="choice">
+            <choice>
+                <element label="Unicom" sequence="0" value="unicom"/>
+                <element label="SalesForceCR" sequence="1" value="salesforcecr"/>
+                <element label="CommScope Phone Store" sequence="2" value="commscopephonestore"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Web Service Key" max_length="40" name="web_service_key" type="string"/>
     </element>
 </database>

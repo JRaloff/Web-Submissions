@@ -3,31 +3,45 @@
     <sys_ui_related sys_domain="global" table="x_mmsi_web_submiss_web_submission_service" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Web Submission Service - Default view" name="x_mmsi_web_submiss_web_submission_service" related_list="NULL" sys_domain="global" view="Default view">7cebad3cdbabb24086e17ee5bf9619be</list_id>
+            <list_id display_value="Web Submission Service - Default view" name="x_mmsi_web_submiss_web_submission_service" related_list="NULL" sys_domain="global" view="Default view">d4f7b95213b01700221dd7028144b0f1</list_id>
             <order_by/>
             <position>0</position>
             <related_list>u_web_submission_transform_map.u_web_service</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jraloff_admin</sys_created_by>
-            <sys_created_on>2017-06-21 21:29:16</sys_created_on>
-            <sys_id>b0ebad3cdbabb24086e17ee5bf9619bf</sys_id>
+            <sys_created_on>2018-03-14 13:42:26</sys_created_on>
+            <sys_id>d8f7b95213b01700221dd7028144b0f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jraloff_admin</sys_updated_by>
-            <sys_updated_on>2017-06-21 21:29:16</sys_updated_on>
+            <sys_updated_on>2018-03-14 13:42:26</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Web Submission Service - Default view" name="x_mmsi_web_submiss_web_submission_service" related_list="NULL" sys_domain="global" view="Default view">7cebad3cdbabb24086e17ee5bf9619be</list_id>
+            <list_id display_value="Web Submission Service - Default view" name="x_mmsi_web_submiss_web_submission_service" related_list="NULL" sys_domain="global" view="Default view">d4f7b95213b01700221dd7028144b0f1</list_id>
             <order_by/>
             <position>1</position>
+            <related_list>REL:898ca55e13701700221dd7028144b07b</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2018-03-14 13:42:26</sys_created_on>
+            <sys_id>9cf7b95213b01700221dd7028144b0f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2018-03-14 13:42:26</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Web Submission Service - Default view" name="x_mmsi_web_submiss_web_submission_service" related_list="NULL" sys_domain="global" view="Default view">d4f7b95213b01700221dd7028144b0f1</list_id>
+            <order_by/>
+            <position>2</position>
             <related_list>u_web_submission_import.u_web_service</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>jraloff_admin</sys_created_by>
-            <sys_created_on>2017-06-21 21:29:16</sys_created_on>
-            <sys_id>74ebad3cdbabb24086e17ee5bf9619bf</sys_id>
+            <sys_created_on>2018-03-14 13:42:26</sys_created_on>
+            <sys_id>50f7b95213b01700221dd7028144b0f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jraloff_admin</sys_updated_by>
-            <sys_updated_on>2017-06-21 21:29:16</sys_updated_on>
+            <sys_updated_on>2018-03-14 13:42:26</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Web Submission Service - Default view</calculated_name>
@@ -38,10 +52,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>jraloff_admin</sys_created_by>
-            <sys_created_on>2017-06-21 21:29:16</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_on>2018-03-14 13:42:26</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>7cebad3cdbabb24086e17ee5bf9619be</sys_id>
+            <sys_id>d4f7b95213b01700221dd7028144b0f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Web Submission Service - Default view</sys_name>
             <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
@@ -50,7 +64,7 @@
             <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
             <sys_update_name>sys_ui_related_x_mmsi_web_submiss_web_submission_service_null</sys_update_name>
             <sys_updated_by>jraloff_admin</sys_updated_by>
-            <sys_updated_on>2017-06-21 21:29:16</sys_updated_on>
+            <sys_updated_on>2018-03-14 13:42:26</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

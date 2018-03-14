@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>u_web_submission_transform_map</basic_apply_to>
+        <basic_query_from>u_web_submission_transform_map</basic_query_from>
+        <insert_callback/>
+        <name>Other Transforms</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery("u_web_service", parent.u_web_service);
+	//current.addQuery("sys_id", "!=", parent.sys_id);
+
+})(current, parent);]]></query_with>
+        <reference_field>u_web_service</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2018-03-14 13:43:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>bc48b95213b01700221dd7028144b0f3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Other Transforms</sys_name>
+        <sys_package display_value="Web Submission" source="x_mmsi_web_submiss">f46d4ef4db7a36006e4a7eb6bf961966</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Web Submission">f46d4ef4db7a36006e4a7eb6bf961966</sys_scope>
+        <sys_update_name>sys_relationship_bc48b95213b01700221dd7028144b0f3</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2018-03-14 13:47:45</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=bc48b95213b01700221dd7028144b0f3"/>
+</record_update>
